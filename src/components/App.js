@@ -1,6 +1,11 @@
+import UrlRoutes from "../components/Routes"
+
 const App = () => {
   return (
-    <div>Hello, World</div>
+    <div>
+      <UrlRoutes />
+    </div>
+
   ) 
 }
 
