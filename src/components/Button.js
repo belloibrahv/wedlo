@@ -2,14 +2,14 @@ import Button from "@mui/material/Button"
 import Box from "@mui/material/Box"
 
 const styles = {
-  container: {marginLeft: '30px', marginTop: '20px',},
+  container: {marginLeft: '30px', marginTop: '10px',},
   btn: {
     width: '100%',
-    maxWidth: '300px',
-    backgroundColor: '#009fc6',
-    color: '#fff',
+    maxWidth: '550px',
+    backgroundColor: 'primary.main',
+    color: 'common.white',
     '&:hover': {
-      backgroundColor: '#008aab'
+      backgroundColor: 'primary.light'
     }
   }
 }
