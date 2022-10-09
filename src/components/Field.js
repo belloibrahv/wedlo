@@ -6,13 +6,15 @@ const styles = {
   container: {marginLeft: '30px'},
   textField: {
     backgroundColor: '#fafafa',
+    maxWidth: '550px',
     width: '100%',
-    maxWidth: '300px',
-    margin: '5px auto',
-    fontSize: '15px'
+    margin: '5px auto 15px',
+    fontSize: '15px',
+    padding: '4px 0 4px 15px',
+    lineHeight: '1.43'
   },
   label: {
-    fontSize: '14px',
+    fontSize: '12px',
   }
 }
 

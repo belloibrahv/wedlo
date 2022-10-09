@@ -4,9 +4,11 @@ const styles = {
   container: {
     display: 'flex',
     justifyContent: 'center',
-    color: '#ccc',
-    fontSize: '14px',
-    marginTop: '10px' 
+    color: 'secondary.main',
+    fontSize: '12px',
+    marginTop: '6px',
+    textAlign: 'center',
+    lineHeight: '1.5'
   },
   link: {
     marginLeft: '5px',

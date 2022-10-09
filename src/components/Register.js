@@ -1,20 +1,9 @@
-import Box from "@mui/material/Box"
 import Field from "./Field"
 import { FormButton } from "./Button"
 import { useState } from "react"
 import FormHeader from "./FormHeader"
 import FormNav from "./FormNav"
-
-const styles = {
-  form: {
-    height: '600px',
-    margin: '0 350px',
-    display: 'flex',
-    flexDirection: 'column',
-    justifyContent: 'center',
-    textAlign: 'left'
-  },
-}
+import Form from "./Form"
 
 const initialData = {
   firstname: '',
@@ -40,15 +29,15 @@ const Register = () => {
   }
 
   return (
-    <Box component='form' onSubmit={handleSubmit} sx={styles.form}>
+    <Form component='form' onSubmit={handleSubmit}>
       <FormHeader text='Create an account to continue to Codementor' />
       <Field name='firstname' label='First name*' value={fields.firstname} onChange={handleChange}/>
       <Field name='lastname' label='Last name *' value={fields.lastname} onChange={handleChange}/>
       <Field type='email' name='email' label='Email *' value={fields.email} onChange={handleChange}/>
       <Field type='password' name='password' label='Password *' value={fields.password} onChange={handleChange}/>
-      <FormButton btnType='submit' btnText='Log in'/>
+      <FormButton btnType='submit' btnText='Sign up'/>
       <FormNav href='/' text="Already have an account?" navText='Log in'/>
-    </Box>
+    </Form>
   )
 }
 
