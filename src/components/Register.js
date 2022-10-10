@@ -4,6 +4,7 @@ import { useState } from "react"
 import FormHeader from "./FormHeader"
 import FormNav from "./FormNav"
 import Form from "./Form"
+import { Outlet } from "react-router-dom"
 
 const initialData = {
   firstname: '',
@@ -37,6 +38,7 @@ const Register = () => {
       <Field type='password' name='password' label='Password *' value={fields.password} onChange={handleChange}/>
       <FormButton btnType='submit' btnText='Sign up'/>
       <FormNav href='/wedlo' text="Already have an account?" navText='Log in'/>
+      <Outlet />
     </Form>
   )
 }
