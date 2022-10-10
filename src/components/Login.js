@@ -31,7 +31,7 @@ const Login = () => {
       <Field type='email' name='email' label='Email *' value={fields.email} onChange={handleChange}/>
       <Field type='password' name='password' label= 'Password *' value={fields.password} onChange={handleChange}/>
       <FormButton btnType='submit' btnText='Log in'/>
-      <FormNav href='/register' text="Don't have an account?" navText='Sign up'/>
+      <FormNav href='/signup' text="Don't have an account?" navText='Sign up'/>
     </Form>
   )
 }
