@@ -1,8 +1,9 @@
-import UrlRoutes from "../components/Routes"
+// import UrlRoutes from "../components/Routes"
 
 const App = () => {
   return (
-      <UrlRoutes />
+      // <UrlRoutes />
+      <h1>Hello WELLO</h1>
   ) 
 }
 
