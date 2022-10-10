@@ -2,7 +2,7 @@ import UrlRoutes from "../components/Routes"
 
 const App = () => {
   return (
-      <UrlRoutes />
+    <UrlRoutes />
   ) 
 }
 
