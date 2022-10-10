@@ -21,8 +21,8 @@ const UrlRoutes = () => {
   return (
     <ThemeProvider theme={theme}>
       <Routes>
-        <Route path='/wedlo' element={<LoginPage />}/>
-        <Route path='/wedlo/signup' element={<RegisterPage />}/>
+        <Route path='/' element={<LoginPage />}/>
+        <Route path='/signup' element={<RegisterPage />}/>
       </Routes>
     </ThemeProvider>
   )
