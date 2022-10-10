@@ -4,6 +4,7 @@ import Form from "./Form"
 import FormNav from "./FormNav"
 import Field from "./Field"
 import FormHeader from "./FormHeader"
+import { Outlet } from "react-router-dom"
 
 const initialData = {
   email: '',
@@ -32,6 +33,7 @@ const Login = () => {
       <Field type='password' name='password' label= 'Password *' value={fields.password} onChange={handleChange}/>
       <FormButton btnType='submit' btnText='Log in'/>
       <FormNav href='/wedlo/signup' text="Don't have an account?" navText='Sign up'/>
+      <Outlet />
     </Form>
   )
 }
