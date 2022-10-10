@@ -22,7 +22,7 @@ const UrlRoutes = () => {
     <ThemeProvider theme={theme}>
       <Routes>
         <Route path='/' element={<LoginPage />}/>
-        <Route path='/register' element={<RegisterPage />}/>
+        <Route path='/signup' element={<RegisterPage />}/>
       </Routes>
     </ThemeProvider>
   )
