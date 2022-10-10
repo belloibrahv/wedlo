@@ -39,7 +39,7 @@ const Register = () => {
       <FormButton btnType='submit' btnText='Sign up'/>
       <FormNav href='/wedlo' text="Already have an account?" navText='Log in'/>
       <Outlet />
-   </Form>
+    </Form>
   )
 }
 
