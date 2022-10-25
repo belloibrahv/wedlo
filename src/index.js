@@ -1,16 +1,20 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+import { BrowserRouter as Router} from 'react-router-dom';
 import App from './components/App';
 import reportWebVitals from './reportWebVitals';
-import { BrowserRouter as Router} from 'react-router-dom';
+import serverConfig from './mock-api/server';
 import './index.css';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
+if (process.env.NODE_ENV === 'development') {
+  serverConfig({ environment: 'development' });
+}
 
 root.render(
     <React.StrictMode>
-       <Router basename=''>
+       <Router basename='/'>
          <App />
        </Router>
     </React.StrictMode>
