@@ -15,7 +15,7 @@ const serverConfig = ({environment = 'test'} = {}) => {
 			
 			card: Model.extend({ 
 				user: belongsTo(),
-				expense: hasMany() 
+				expense: hasMany()
 			}),
 			
 			expense: Model.extend({ card: belongsTo() }),
