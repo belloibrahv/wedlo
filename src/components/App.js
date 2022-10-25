@@ -1,8 +1,14 @@
-import UrlRoutes from "../components/Routes"
+const styles = {
+  container: {
+    textAlign: 'center',
+    fontSize: '3rem',
+    margin: '40px auto'
+  }
+}
 
 const App = () => {
   return (
-      <UrlRoutes />
+     <div style={styles.container}>Welcome to Wedlo</div> 
   ) 
 }
 
