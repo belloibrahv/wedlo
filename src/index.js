@@ -3,14 +3,9 @@ import ReactDOM from 'react-dom/client';
 import { BrowserRouter as Router} from 'react-router-dom';
 import reportWebVitals from './reportWebVitals';
 import App from './components/App';
-import serverConfig from './mock-api/server';
 import './index.css';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
-
-if (process.env.NODE_ENV === 'development') {
-  serverConfig({ environment: 'development' });
-}
 
 root.render(
     <React.StrictMode>
