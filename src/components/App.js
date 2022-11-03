@@ -7,6 +7,7 @@ const styles = {
 }
 
 const App = () => {
+ 
   return (
      <div style={styles.container}>Welcome to Wedlo</div> 
   ) 
